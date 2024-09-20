@@ -66,7 +66,16 @@ export default function HomePage() {
           <ul className="mt-4 space-y-2">
             <li>
               <a
-                href="https://oneswype.com"
+                href="https://makefireplace.com"
+                className="text-hype-purple-text hover:text-hype-purple-text-hover"
+              >
+                Fireplace
+              </a>{" "}
+              — all-in-one community management platform for student organizations
+            </li>
+            <li>
+              <a
+                href="https://swype.jobs"
                 className="text-hype-purple-text hover:text-hype-purple-text-hover"
               >
                 Swype
@@ -84,13 +93,22 @@ export default function HomePage() {
             </li>
             <li>
               <a
-                href="https://usefortitude.com/"
+                href="https://usefortitude.com"
                 className="text-hype-purple-text hover:text-hype-purple-text-hover"
               >
                 Fortitude
               </a>{" "}
               — payments platform to protect businesses from chargebacks and
               frauds
+            </li>
+            <li>
+              <a
+                href="https://bibite.app"
+                className="text-hype-purple-text hover:text-hype-purple-text-hover"
+              >
+                Bibite
+              </a>{" "}
+              — split bills and share restaurant reviews with friends
             </li>
           </ul>
         </details>
