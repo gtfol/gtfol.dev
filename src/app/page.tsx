@@ -80,7 +80,7 @@ export default function HomePage() {
               >
                 Swype
               </a>{" "}
-              — applying to jobs by swiping right
+              — apply to jobs by swiping right
             </li>
             <li>
               <a
