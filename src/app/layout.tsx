@@ -29,10 +29,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://gtfol.dev",
+    url: "https://gtfol.inc",
     images: [
       {
-        url: "https://gtfol.dev/logo.png",
+        url: "https://gtfol.inc/logo.png",
         width: 600,
         height: 600,
         alt: "gtfol",
