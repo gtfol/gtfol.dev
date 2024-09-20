@@ -47,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="h-full" lang="en">
+    <html className="h-full bg-black" lang="en">
       <CSPostHogProvider>
         <body
           className={clsx(
