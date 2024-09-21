@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { CSPostHogProvider } from "../providers/PostHogProvider";
-import { GeistMono } from 'geist/font/mono'
+import { GeistMono } from "geist/font/mono";
 import { Space_Mono, Unbounded } from "next/font/google";
 
 import "./globals.css";
@@ -22,7 +22,6 @@ const spaceMono = Space_Mono({
 });
 
 const geist = GeistMono;
-
 export const metadata: Metadata = {
   title: "gtfol",
   icons: ["/favicon.ico"],
@@ -38,6 +37,12 @@ export const metadata: Metadata = {
         alt: "gtfol",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "gtfol",
+    description: "get the f**k off localhost",
+    images: ["https://gtfol.inc/logo.png"],
   },
 };
 
