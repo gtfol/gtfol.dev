@@ -71,7 +71,7 @@ export default function HomePage() {
               >
                 Fireplace
               </a>{" "}
-              — all-in-one community management platform for student organizations
+              — all-in-one community management for student orgs
             </li>
             <li>
               <a
@@ -80,7 +80,7 @@ export default function HomePage() {
               >
                 Swype
               </a>{" "}
-              — apply to jobs by swiping right
+              — apply to jobs by swyping right
             </li>
             <li>
               <a
@@ -110,6 +110,24 @@ export default function HomePage() {
               </a>{" "}
               — split bills and share restaurant reviews with friends
             </li>
+            <li>
+              <a
+                href="https://edenonearth.ai"
+                className="text-hype-purple-text hover:text-hype-purple-text-hover"
+              >
+                Eden
+              </a>{" "}
+              — healthcare software to 10x staff productivity at 1/10th the cost
+            </li>
+            <li>
+              <a
+                href="https://intervieweveryone.org"
+                className="text-hype-purple-text hover:text-hype-purple-text-hover"
+              >
+                Eden
+              </a>{" "}
+              — pre-screening interview tool for small businesses
+            </li>
           </ul>
         </details>
 
@@ -121,7 +139,6 @@ export default function HomePage() {
           >
             rev.school
           </a>
-          !
         </p>
       </main>
     </div>
