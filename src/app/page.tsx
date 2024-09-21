@@ -124,7 +124,7 @@ export default function HomePage() {
                 href="https://intervieweveryone.org"
                 className="text-hype-purple-text hover:text-hype-purple-text-hover"
               >
-                Eden
+                Interview Everyone
               </a>{" "}
               — pre-screening interview tool for small businesses
             </li>
