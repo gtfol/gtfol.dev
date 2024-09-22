@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-black text-white p-8">
+    <div className="min-h-screen bg-black text-white p-8 flex flex-col">
       <header className="mb-12">
         <img src="/icon.png" alt="gtfol" className="h-8 w-auto mr-2" />
         <h2 className="text-xl font-bold mt-2 text-space-gray">
@@ -10,7 +10,7 @@ export default function HomePage() {
         </h2>
       </header>
 
-      <main>
+      <main className="flex-grow">
         <div className="mb-12">
           <h3 className="text-xl font-bold mb-4">what is gtfol?</h3>
           <p className="mb-4">
@@ -141,6 +141,17 @@ export default function HomePage() {
           </a>
         </p>
       </main>
+
+      <footer className="mt-12 pt-8 border-t border-void-purple">
+        <p className="text-sm text-space-gray">
+          © {new Date().getFullYear()} gtfol, LLC. all rights reserved.
+        </p>
+        <div className="mt-4">
+          <span className="text-sm text-space-gray">
+            contact us: team[at]gtfol.inc
+          </span>
+        </div>
+      </footer>
     </div>
   );
 }
