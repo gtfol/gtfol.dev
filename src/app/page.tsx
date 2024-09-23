@@ -103,6 +103,15 @@ export default function HomePage() {
             </li>
             <li>
               <a
+                href="https://parkwithperch.com"
+                className="text-hype-purple-text hover:text-hype-purple-text-hover"
+              >
+                Perch
+              </a>{" "}
+              — stress-free, reserved football parking
+            </li>
+            <li>
+              <a
                 href="https://bibite.app"
                 className="text-hype-purple-text hover:text-hype-purple-text-hover"
               >
@@ -127,6 +136,15 @@ export default function HomePage() {
                 Interview Everyone
               </a>{" "}
               — pre-screening interview tool for small businesses
+            </li>
+            <li>
+              <a
+                href="https://edugator.app"
+                className="text-hype-purple-text hover:text-hype-purple-text-hover"
+              >
+                Edugator
+              </a>{" "}
+              — the future of computing education
             </li>
           </ul>
         </details>
