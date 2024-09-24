@@ -17,9 +17,14 @@ export default function HomePage() {
             gtfol is a venture studio founded by a community of builders,
             founders, creatives, and researchers in boston.
           </p>
+          <p className="mb-4">
+            our goal is simple: we want to build companies that go from 0 → 1,
+            scale, and repeat.
+          </p>
           <p>
-            our goal is simple: we want to help people "get the f**k off
-            localhost".
+            our vision is to assemble the next generation of Steve Jobs, Mark
+            Zuckerberg, and Elon Musk, and build companies together that change
+            the world.
           </p>
         </div>
 
