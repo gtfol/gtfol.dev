@@ -172,7 +172,7 @@ export default function HomePage() {
         </p>
         <div className="mt-4">
           <span className="text-sm text-space-gray">
-            <Link href="/contact" className="hover:text-hype-purple-text-hover">
+            <Link href="/contact" className="hover:underline">
               contact us
             </Link>
             : team[at]gtfol.inc
