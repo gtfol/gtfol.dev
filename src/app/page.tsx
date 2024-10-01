@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function HomePage() {
@@ -171,7 +172,10 @@ export default function HomePage() {
         </p>
         <div className="mt-4">
           <span className="text-sm text-space-gray">
-            contact us: team[at]gtfol.inc
+            <Link href="/contact" className="hover:text-hype-purple-text-hover">
+              contact us
+            </Link>
+            : team[at]gtfol.inc
           </span>
         </div>
       </footer>
