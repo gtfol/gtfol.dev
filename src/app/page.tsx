@@ -36,6 +36,15 @@ export default function HomePage() {
           <ul className="space-y-2 mt-4">
             <li>
               <a
+                href="https://textfully.dev/"
+                className="text-hype-purple-text hover:text-hype-purple-text-hover"
+              >
+                Textfully
+              </a>{" "}
+              — the open source twilio alternative
+            </li>
+            <li>
+              <a
                 href="https://www.gloskin.app/"
                 className="text-hype-purple-text hover:text-hype-purple-text-hover"
               >
