@@ -90,10 +90,10 @@ export default function HomePage() {
             </li>
             <li>
               <a
-                href="https://swype.jobs"
+                href="https://sorce.jobs"
                 className="text-hype-purple-text hover:text-hype-purple-text-hover"
               >
-                Swype
+                Sorce
               </a>{" "}
               — apply to jobs by swyping right
             </li>
@@ -184,7 +184,7 @@ export default function HomePage() {
             <Link href="/contact" className="hover:underline">
               contact us
             </Link>
-            : team[at]gtfol.inc
+            : team[at]gtfol.dev
           </span>
         </div>
       </footer>

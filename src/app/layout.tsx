@@ -28,10 +28,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://gtfol.inc",
+    url: "https://www.gtfol.dev",
     images: [
       {
-        url: "https://gtfol.inc/logo.png",
+        url: "https://www.gtfol.dev/logo.png",
         width: 600,
         height: 600,
         alt: "gtfol",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "gtfol",
     description: "get the f**k off localhost",
-    images: ["https://gtfol.inc/logo.png"],
+    images: ["https://www.gtfol.dev/logo.png"],
   },
 };
 
