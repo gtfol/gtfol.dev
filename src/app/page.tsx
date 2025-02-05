@@ -15,28 +15,24 @@ export default function HomePage() {
         <div className="mb-12">
           <h3 className="text-xl font-bold mb-4">what is gtfol?</h3>
           <p className="mb-4">
-            gtfol is a venture studio founded by a community of builders,
-            founders, creatives, and researchers in boston.
-          </p>
-          <p className="mb-4">
-            our goal is simple: we want to build companies that go from 0 → 1,
+            gtfol is an ai product studio. we build software that go from 0 → 1,
             scale, and repeat.
           </p>
           <p>
-            our vision is to assemble the next generation of Steve Jobs, Mark
-            Zuckerberg, and Elon Musk, and build companies together that change
-            the world.
+            our playbook allows us to build ai-powered web and mobile apps
+            across consumer, saas, and enterprise applications, going from idea,
+            design, mockup, mvp, to launch in lightning speed
           </p>
         </div>
 
         <details className="mb-4" open>
           <summary className="cursor-pointer text-xl font-semibold">
-            latest ventures
+            latest projects
           </summary>
           <ul className="space-y-2 mt-4">
             <li>
               <a
-                href="https://textfully.dev/"
+                href="https://textfully.dev"
                 className="text-hype-purple-text hover:text-hype-purple-text-hover"
               >
                 Textfully
@@ -45,7 +41,7 @@ export default function HomePage() {
             </li>
             <li>
               <a
-                href="https://www.gloskin.app/"
+                href="https://gloskin.vercel.app"
                 className="text-hype-purple-text hover:text-hype-purple-text-hover"
               >
                 Glo
@@ -54,7 +50,7 @@ export default function HomePage() {
             </li>
             <li>
               <a
-                href="https://wakeupclubapp.com/"
+                href="http://wakeupclub.vercel.app"
                 className="text-hype-purple-text hover:text-hype-purple-text-hover"
               >
                 Wakeup Club
@@ -63,7 +59,7 @@ export default function HomePage() {
             </li>
             <li>
               <a
-                href="https://flowwork.xyz/"
+                href="https://flowwork.vercel.app"
                 className="text-hype-purple-text hover:text-hype-purple-text-hover"
               >
                 Flow Work
@@ -76,8 +72,18 @@ export default function HomePage() {
 
         <details className="mb-12">
           <summary className="cursor-pointer text-xl font-semibold">
-            rev ventures
+            rev projects
           </summary>
+          <p className="mt-2 text-sm text-gray-400">
+            rev is a community of builders, founders, creators, and researchers
+            in boston. check it out at{" "}
+            <a
+              href="https://rev.school"
+              className="text-hype-purple-text hover:text-hype-purple-text-hover"
+            >
+              rev.school
+            </a>
+          </p>
           <ul className="mt-4 space-y-2">
             <li>
               <a
@@ -163,16 +169,6 @@ export default function HomePage() {
             </li>
           </ul>
         </details>
-
-        <p>
-          looking for our community/incubator? check out{" "}
-          <a
-            href="https://rev.school"
-            className="text-hype-purple-text hover:text-hype-purple-text-hover"
-          >
-            rev.school
-          </a>
-        </p>
       </main>
 
       <footer className="mt-12 pt-8 border-t border-void-purple">
