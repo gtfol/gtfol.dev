@@ -12,9 +12,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-black text-white p-8 flex flex-col">
-      <div className="mb-12">
-        <Header />
-      </div>
+      <Header />
 
       <main className="flex-grow">
         <h1 className="text-3xl font-bold mb-8">contact us</h1>
@@ -57,9 +55,7 @@ export default function ContactPage() {
         </div>
       </main>
 
-      <div className="mt-12">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }

@@ -1,10 +1,32 @@
 "use client";
 
 import { scrollToTop } from "@/lib/utils";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export const BackToTop = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="fixed bottom-8 right-8 shadow-2xl">
+    <motion.div 
+      className="fixed bottom-8 right-8 shadow-2xl z-40"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: isVisible ? 1 : 0 }}
+      transition={{ duration: 0.2 }}
+    >
       <button
         onClick={scrollToTop}
         className="bg-zinc-800 hover:brightness-110 text-white px-4 py-2 rounded-full shadow-lg transition-all duration-300 flex items-center"
@@ -21,8 +43,8 @@ export const BackToTop = () => {
             clipRule="evenodd"
           />
         </svg>
-        <span className="ml-2">Back to Top</span>
+        <span className="ml-2">back to top</span>
       </button>
-    </div>
+    </motion.div>
   );
 };

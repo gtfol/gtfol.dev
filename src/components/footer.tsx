@@ -3,6 +3,7 @@
 import GitHub from "@/assets/icons/socials/github";
 import Instagram from "@/assets/icons/socials/instagram";
 import X from "@/assets/icons/socials/x";
+import { scrollToTop } from "@/lib/utils";
 import Link from "next/link";
 
 interface SocialLink {
@@ -43,35 +44,40 @@ const SOCIAL_LINKS: SocialLink[] = [
 
 export const Footer = () => {
   return (
-    <footer className="border-t border-void-purple">
-      <div className="mt-10 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-6 sm:gap-0">
-        <div className="flex flex-col gap-y-6">
-          <div className="flex flex-col gap-y-2">
-            <img
-              src="/icon.png"
-              alt="gtfol"
-              className="h-6 w-fit flex-shrink-0"
-            />
-            <span className="text-xs text-space-gray">get the f**k off localhost</span>
-          </div>
-          <div className="flex gap-x-6">
-            {SOCIAL_LINKS.map(({ href, icon: Icon, ariaLabel }) => (
-              <a
-                key={href}
-                href={href}
-                aria-label={ariaLabel}
-                className="focus:outline-void-purple"
-              >
-                <Icon className="h-4 w-4 fill-space-gray hover:fill-space-gray-hover transition-colors" />
-              </a>
-            ))}
+    <footer className="mt-12 border-t border-void-purple">
+      <div className="max-w-5xl mx-auto px-6 py-12">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-6 sm:gap-0">
+          <div className="flex flex-col gap-y-6">
+            <div className="flex flex-col gap-y-4">
+              <button onClick={scrollToTop} className="focus:outline-void-purple">
+                <img
+                  src="/icon.png"
+                  alt="gtfol"
+                  className="h-6 w-fit flex-shrink-0"
+                />
+              </button>
+              <span className="text-xs text-space-gray">
+                get the f**k off localhost
+              </span>
+            </div>
+            <div className="flex gap-x-6">
+              {SOCIAL_LINKS.map(({ href, icon: Icon, ariaLabel }) => (
+                <a
+                  key={href}
+                  href={href}
+                  aria-label={ariaLabel}
+                  className="focus:outline-void-purple"
+                >
+                  <Icon className="h-4 w-4 fill-space-gray hover:fill-space-gray-hover transition-colors" />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-6 sm:items-end">
-          <span className="hidden sm:block">&nbsp;</span>
-          <p className="text-sm text-space-gray">
-            © 2024-{new Date().getFullYear()} gtfol, LLC. all rights reserved.
-          </p>
+        <div className="mt-12 pt-8 border-t border-[#252525] flex flex-col sm:flex-row justify-between items-center">
+          <div className="text-[#50555c] text-xs mb-4 sm:mb-0">
+            {`© 2024-${new Date().getFullYear()} gtfol, LLC. All rights reserved.`}
+          </div>
         </div>
       </div>
     </footer>

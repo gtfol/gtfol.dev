@@ -1,32 +1,80 @@
+"use client";
+
 import { BackToTop } from "@/components/back-to-top";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { PageWrapper } from "@/components/page-wrapper";
+import { motion } from "framer-motion";
 
 export default function PrivacyPage() {
   return (
-    <>
-      <div className="mb-12">
-        <Header />
-      </div>
+    <PageWrapper>
+      <Header />
 
-      <div className="max-w-4xl mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-4">Privacy Policy</h1>
-        <p className="text-zinc-400 mb-8">Last updated: February 6, 2025</p>
+      <motion.div
+        className="max-w-5xl mx-auto px-6 py-16"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+          delay: 1.1,
+          ease: "easeOut",
+        }}
+      >
+        <motion.h1
+          className="text-4xl font-bold mb-4 font-unbounded"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.2,
+            delay: 1.2,
+            ease: "easeOut",
+          }}
+        >
+          Privacy Policy
+        </motion.h1>
+        <motion.p
+          className="text-zinc-400 mb-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.2,
+            delay: 1.3,
+            ease: "easeOut",
+          }}
+        >
+          Last updated: February 6, 2025
+        </motion.p>
 
-        <div className="prose prose-invert max-w-none">
+        <motion.div
+          className="prose prose-invert max-w-none"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.2,
+            delay: 1.4,
+            ease: "easeOut",
+          }}
+        >
           <section className="mb-12">
             <p className="text-zinc-300 leading-relaxed">
-              Vly Labs Inc. ("we", "our", "us") operates the website
-              https://vly.ai (the "Site"). This privacy policy explains how we
-              collect, use, and protect the personal information of users who
-              visit our Site and use our services. By using the Site, you agree
-              to the collection and use of information in accordance with this
-              policy.
+              gtfol, LLC ("we", "our", "us"), a company registered in Delaware,
+              United States at 131 Continental Dr, Suite 305, Newark, DE 19713,
+              operates the website <a
+                href="https://gtfol.dev"
+                className="text-hype-purple-text hover:text-hype-purple-text-hover"
+              >
+                gtfol.dev
+              </a>{" "}
+              (the "Site"). This privacy policy explains how we collect, use,
+              and protect the personal information of users who visit our Site
+              and use our services. By using the Site, you agree to the collection
+              and use of information in accordance with this policy.
             </p>
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-6">
+            <h2 className="text-2xl font-bold mb-6 font-unbounded">
               1. Information We Collect
             </h2>
             <p className="text-zinc-300 mb-4">
@@ -54,7 +102,7 @@ export default function PrivacyPage() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-6">
+            <h2 className="text-2xl font-bold mb-6 font-unbounded">
               2. How We Use Your Information
             </h2>
             <p className="text-zinc-300 mb-4">
@@ -73,7 +121,7 @@ export default function PrivacyPage() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-6">
+            <h2 className="text-2xl font-bold mb-6 font-unbounded">
               3. Sharing Your Information
             </h2>
             <p className="text-zinc-300 mb-4">
@@ -93,7 +141,9 @@ export default function PrivacyPage() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-6">4. Data Security</h2>
+            <h2 className="text-2xl font-bold mb-6 font-unbounded">
+              4. Data Security
+            </h2>
             <p className="text-zinc-300">
               We are committed to protecting your personal information. We use a
               variety of security measures, including encryption and secure
@@ -104,7 +154,9 @@ export default function PrivacyPage() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-6">5. Data Retention</h2>
+            <h2 className="text-2xl font-bold mb-6 font-unbounded">
+              5. Data Retention
+            </h2>
             <p className="text-zinc-300">
               We retain your personal data only for as long as necessary for the
               purposes set out in this policy, unless a longer retention period
@@ -113,7 +165,9 @@ export default function PrivacyPage() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-6">6. Your Rights</h2>
+            <h2 className="text-2xl font-bold mb-6 font-unbounded">
+              6. Your Rights
+            </h2>
             <p className="text-zinc-300 mb-4">You have the right to:</p>
             <ul className="list-disc pl-6 text-zinc-300 space-y-2">
               <li>Access and receive a copy of your personal data</li>
@@ -132,7 +186,9 @@ export default function PrivacyPage() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-6">7. Third-Party Links</h2>
+            <h2 className="text-2xl font-bold mb-6 font-unbounded">
+              7. Third-Party Links
+            </h2>
             <p className="text-zinc-300">
               Our Site may contain links to other websites. We are not
               responsible for the privacy practices of third-party sites. We
@@ -141,7 +197,9 @@ export default function PrivacyPage() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-6">8. Children's Privacy</h2>
+            <h2 className="text-2xl font-bold mb-6 font-unbounded">
+              8. Children's Privacy
+            </h2>
             <p className="text-zinc-300">
               Our services are not intended for anyone under the age of 13. We
               do not knowingly collect personally identifiable information from
@@ -150,7 +208,7 @@ export default function PrivacyPage() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-6">
+            <h2 className="text-2xl font-bold mb-6 font-unbounded">
               9. Changes to This Privacy Policy
             </h2>
             <p className="text-zinc-300">
@@ -160,30 +218,32 @@ export default function PrivacyPage() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-6">Contact Us</h2>
+            <h2 className="text-2xl font-bold mb-6 font-unbounded">
+              Contact Us
+            </h2>
             <p className="text-zinc-300 mb-4">
               If you have any questions or concerns about this Privacy Policy,
               please contact us:
             </p>
             <address className="text-zinc-300 not-italic">
-              <p className="mb-1">Vly Labs Inc.</p>
-              <p className="mb-1">2235 3rd Street W309</p>
-              <p className="mb-1">San Francisco, CA 94107</p>
+              <p className="mb-1">gtfol, LLC</p>
+              <p className="mb-1">1950 Washington St. Apt. 3A</p>
+              <p className="mb-1">Boston, MA 02118</p>
+              <p className="mb-1">United States</p>
               <p>
-                Email:{" "}
                 <a
-                  href="mailto:team@vly.ai"
-                  className="text-[#0A93F6] hover:brightness-110"
+                  href="mailto:team@gtfol.dev"
+                  className="text-hype-purple-text hover:text-hype-purple-text-hover"
                 >
-                  team@vly.ai
+                  team@gtfol.dev
                 </a>
               </p>
             </address>
           </section>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
       <BackToTop />
       <Footer />
-    </>
+    </PageWrapper>
   );
 }

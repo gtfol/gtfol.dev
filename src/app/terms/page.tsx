@@ -1,30 +1,40 @@
+"use client";
+
 import { BackToTop } from "@/components/back-to-top";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { PageWrapper } from "@/components/page-wrapper";
 
 export default function TermsPage() {
   return (
-    <>
-      <div className="mb-12">
-        <Header />
-      </div>
+    <PageWrapper>
+      <Header />
 
-      <div className="max-w-4xl mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-4">Terms of Service</h1>
+      <div className="max-w-5xl mx-auto px-6 py-16">
+        <h1 className="text-4xl font-bold mb-4 font-unbounded">
+          Terms of Service
+        </h1>
         <p className="text-zinc-400 mb-8">Last updated: February 6, 2025</p>
 
         <div className="prose prose-invert max-w-none">
           <p className="text-zinc-300 mb-4">Welcome to gtfol, LLC.</p>
           <p className="text-zinc-300 mb-8">
-            These Terms of Service ("Terms") govern your access to and use of
-            https://gtfol.dev (the "Site") and the services provided by gtfol,
-            LLC. ("we", "our", or "us"). By accessing or using the Site, you
-            agree to be bound by these Terms. If you do not agree to these
-            Terms, do not use our services.
+            These Terms of Service ("Terms") govern your access to and use of{" "}
+            <a
+              href="https://gtfol.dev"
+              className="text-hype-purple-text hover:text-hype-purple-text-hover"
+            >
+              gtfol.dev
+            </a>{" "}
+            (the "Site") and the services provided by gtfol, LLC, a company
+            registered in Delaware, United States at 131 Continental Dr, Suite
+            305, Newark, DE 19713 ("we", "our", or "us"). By accessing or using
+            the Site, you agree to be bound by these Terms. If you do not agree
+            to these Terms, do not use our services.
           </p>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4 font-unbounded">
               1. Use of the Site and Services
             </h2>
             <p className="text-zinc-300 mb-4">
@@ -51,7 +61,9 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">2. User Accounts</h2>
+            <h2 className="text-2xl font-bold mb-4 font-unbounded">
+              2. User Accounts
+            </h2>
             <p className="text-zinc-300">
               To use certain features of our services, you may be required to
               create an account. You are responsible for safeguarding the
@@ -62,7 +74,9 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">3. Payment and Billing</h2>
+            <h2 className="text-2xl font-bold mb-4 font-unbounded">
+              3. Payment and Billing
+            </h2>
             <p className="text-zinc-300">
               When you purchase services from gtfol, LLC., you agree to provide
               accurate billing information and to pay all applicable fees.
@@ -74,7 +88,7 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4 font-unbounded">
               4. Intellectual Property
             </h2>
             <p className="text-zinc-300">
@@ -87,7 +101,9 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">5. Restrictions</h2>
+            <h2 className="text-2xl font-bold mb-4 font-unbounded">
+              5. Restrictions
+            </h2>
             <p className="text-zinc-300 mb-4">You agree not to:</p>
             <ul className="list-disc pl-6 text-zinc-300">
               <li>
@@ -110,7 +126,9 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">6. Termination</h2>
+            <h2 className="text-2xl font-bold mb-4 font-unbounded">
+              6. Termination
+            </h2>
             <p className="text-zinc-300">
               We reserve the right to terminate or suspend your account and
               access to our services at any time, with or without notice, for
@@ -120,7 +138,7 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4 font-unbounded">
               7. Disclaimer of Warranties
             </h2>
             <p className="text-zinc-300">
@@ -133,7 +151,7 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4 font-unbounded">
               8. Limitation of Liability
             </h2>
             <p className="text-zinc-300">
@@ -146,7 +164,9 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">9. Indemnification</h2>
+            <h2 className="text-2xl font-bold mb-4 font-unbounded">
+              9. Indemnification
+            </h2>
             <p className="text-zinc-300">
               You agree to indemnify, defend, and hold harmless gtfol, LLC. and
               its affiliates, officers, directors, employees, and agents from
@@ -157,7 +177,7 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4 font-unbounded">
               10. Changes to the Terms
             </h2>
             <p className="text-zinc-300">
@@ -169,7 +189,9 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">11. Governing Law</h2>
+            <h2 className="text-2xl font-bold mb-4 font-unbounded">
+              11. Governing Law
+            </h2>
             <p className="text-zinc-300">
               These Terms shall be governed and construed in accordance with the
               laws of the State of Delaware, without regard to its conflict of
@@ -178,10 +200,12 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">12. Contact Information</h2>
-            <p className="text-zinc-300">
-              If you have any questions or concerns about these Terms, please
-              contact us at:
+            <h2 className="text-2xl font-bold mb-4 font-unbounded">
+              12. Contact Information
+            </h2>
+            <p className="text-zinc-300 mb-4">
+              If you have any questions or concerns about this Privacy Policy,
+              please contact us:
             </p>
             <address className="text-zinc-300 not-italic">
               <p className="mb-1">gtfol, LLC</p>
@@ -202,6 +226,6 @@ export default function TermsPage() {
       </div>
       <BackToTop />
       <Footer />
-    </>
+    </PageWrapper>
   );
 }

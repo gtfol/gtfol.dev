@@ -19,7 +19,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <header className="flex justify-between">
+    <header className="flex justify-between px-8 pt-8 pb-8 mb-8 bg-[#09090B]">
       <div>
         <div className="flex items-center gap-4">
           <Link
@@ -82,7 +82,7 @@ export const Header = () => {
             book a call
           </motion.button>
           <motion.div
-            className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
+            className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
             initial={{ x: "-100%" }}
             animate={{ x: "200%" }}
             transition={{
