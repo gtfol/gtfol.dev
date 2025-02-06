@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { PortfolioCard } from "@/components/portfolio-card";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
-import { GlowingBorder } from "@/components/glowing-border";
+import { HeadingBorder } from "@/components/heading-border";
 import {
   Carousel,
   CarouselContent,
@@ -73,9 +73,9 @@ export default function HomePage() {
         <main className="flex-grow">
           <div className="mb-16">
             <div className="flex">
-              <GlowingBorder delay={1}>
+              <HeadingBorder delay={1}>
                 <h3 className="text-xl font-unbounded">what is gtfol?</h3>
-              </GlowingBorder>
+              </HeadingBorder>
             </div>
             <motion.div
               className="my-8 space-y-6"
@@ -104,9 +104,9 @@ export default function HomePage() {
 
           <div className="mb-12">
             <div className="flex">
-              <GlowingBorder delay={1.4}>
+              <HeadingBorder delay={1.4}>
                 <h3 className="text-xl font-unbounded">our work</h3>
-              </GlowingBorder>
+              </HeadingBorder>
             </div>
             <motion.div
               className="my-8 space-y-6"
@@ -180,9 +180,9 @@ export default function HomePage() {
           </div>
           <div className="mb-8">
             <div className="flex">
-              <GlowingBorder delay={2.1}>
+              <HeadingBorder delay={2.1}>
                 <h3 className="text-xl font-unbounded">rev</h3>
-              </GlowingBorder>
+              </HeadingBorder>
             </div>
             <motion.div
               className="my-8 space-y-6"
@@ -212,8 +212,8 @@ export default function HomePage() {
                   rev
                 </a>{" "}
                 is our affiliated community of builders, founders, creatives,
-                and researchers in boston. we provide free mentorship to the
-                community.
+                and researchers in boston. we provide free mentorship to rev
+                cohort fellows.
               </motion.p>
             </motion.div>
             <div className="relative">

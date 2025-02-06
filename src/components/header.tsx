@@ -67,17 +67,45 @@ export const Header = () => {
         }}
         className="flex flex-col gap-y-3 items-end justify-end"
       >
-        <button
-          className="px-4 py-1 bg-hype-purple text-white font-medium hover:bg-hype-purple-hover transition-colors focus:outline-void-purple"
-          data-cal-link="allenlin/intro"
-          data-cal-config='{"layout":"month_view"}'
+        <div className="relative overflow-hidden">
+          <motion.button
+            className="px-4 py-2 bg-hype-purple text-white font-medium hover:bg-hype-purple-hover transition-colors focus:outline-void-purple"
+            data-cal-link="allenlin/intro"
+            data-cal-config='{"layout":"month_view"}'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 0.5,
+              delay: 1,
+            }}
+          >
+            book a call
+          </motion.button>
+          <motion.div
+            className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
+            initial={{ x: "-100%" }}
+            animate={{ x: "200%" }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              repeatDelay: 1,
+              ease: "linear",
+              delay: 2,
+            }}
+          />
+        </div>
+        <motion.span 
+          className="text-space-gray text-sm flex items-center gap-1"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 1,
+          }}
         >
-          book a call
-        </button>
-        <span className="text-space-gray text-sm flex items-center gap-1">
           <Mail className="w-4 h-4" />
           <span className="tracking-wide">team@gtfol.dev</span>
-        </span>
+        </motion.span>
         <Cal calLink="allenlin/intro" style={{ display: "none" }} />
       </motion.div>
     </header>

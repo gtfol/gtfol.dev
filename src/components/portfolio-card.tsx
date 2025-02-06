@@ -39,12 +39,12 @@ export function PortfolioCard({
             alt={title}
             className="w-full h-auto aspect-[3/4] object-cover mb-4"
           />
-          <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2 py-2 bg-black/50 backdrop-blur-sm text-xs border border-white select-none">
+          <div className="absolute top-3 right-3 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 px-2 py-2 bg-black/50 backdrop-blur-sm text-xs border border-white select-none">
             {category}
           </div>
         </div>
         <h3 className="text-sm font-bold mb-2">{title}</h3>
-        <p className="text-xs opacity-0 group-hover:opacity-60 transition-opacity duration-300">
+        <p className="text-xs sm:opacity-0 sm:group-hover:opacity-60 opacity-60 transition-opacity duration-300">
           {description}
         </p>
       </div>
