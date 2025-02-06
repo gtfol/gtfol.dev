@@ -152,7 +152,7 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.3,
-              delay: 2.1,
+              delay: 1.1,
               ease: "easeOut",
             }}
           >
@@ -161,7 +161,7 @@ export default function HomePage() {
               animate={{ opacity: 1 }}
               transition={{
                 duration: 0.2,
-                delay: 2.2,
+                delay: 1.2,
                 ease: "easeOut",
               }}
             >
@@ -202,7 +202,7 @@ export default function HomePage() {
                     title="Sorce"
                     description="apply to jobs by swyping right"
                     category="consumer"
-                    delay={2.4}
+                    delay={1.4}
                   />
                 </CarouselItem>
                 <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
@@ -212,7 +212,7 @@ export default function HomePage() {
                     title="Auribus Labs"
                     description="the world's first platform for hearing health"
                     category="enterprise"
-                    delay={2.5}
+                    delay={1.5}
                   />
                 </CarouselItem>
                 <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
@@ -222,7 +222,7 @@ export default function HomePage() {
                     title="Fortitude"
                     description="payments platform to protect businesses from chargebacks"
                     category="saas"
-                    delay={2.6}
+                    delay={1.6}
                   />
                 </CarouselItem>
                 <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
@@ -232,7 +232,7 @@ export default function HomePage() {
                     title="Perch"
                     description="stress-free, reserved football parking"
                     category="consumer"
-                    delay={2.7}
+                    delay={1.7}
                   />
                 </CarouselItem>
                 <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
@@ -242,7 +242,7 @@ export default function HomePage() {
                     title="Eden"
                     description="healthcare software to 10x staff productivity"
                     category="enterprise"
-                    delay={2.9}
+                    delay={1.8}
                   />
                 </CarouselItem>
                 <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
@@ -252,7 +252,7 @@ export default function HomePage() {
                     title="Interview Everyone"
                     description="pre-screening interview tool for small businesses"
                     category="saas"
-                    delay={3.0}
+                    delay={1.9}
                   />
                 </CarouselItem>
                 <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
@@ -262,7 +262,7 @@ export default function HomePage() {
                     title="Edugator"
                     description="the future of computing education"
                     category="enterprise"
-                    delay={3.1}
+                    delay={2.0}
                   />
                 </CarouselItem>
               </CarouselContent>

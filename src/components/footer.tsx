@@ -18,9 +18,6 @@ interface FooterLink {
 }
 
 interface FooterLinks {
-  developer: FooterLink[];
-  product: FooterLink[];
-  company: FooterLink[];
   legal: FooterLink[];
 }
 
@@ -42,14 +39,30 @@ const SOCIAL_LINKS: SocialLink[] = [
   },
 ];
 
+const FOOTER_LINKS: FooterLinks = {
+  legal: [
+    {
+      href: "/privacy",
+      label: "privacy policy",
+    },
+    {
+      href: "/terms",
+      label: "terms of service",
+    },
+  ],
+};
+
 export const Footer = () => {
   return (
     <footer className="mt-12 border-t border-void-purple">
       <div className="max-w-5xl mx-auto px-6 py-12">
-        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-6 sm:gap-0">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-6 sm:gap-0">
           <div className="flex flex-col gap-y-6">
             <div className="flex flex-col gap-y-4">
-              <button onClick={scrollToTop} className="focus:outline-void-purple">
+              <button
+                onClick={scrollToTop}
+                className="focus:outline-void-purple"
+              >
                 <img
                   src="/icon.png"
                   alt="gtfol"
@@ -72,6 +85,18 @@ export const Footer = () => {
                 </a>
               ))}
             </div>
+          </div>
+
+          <div className="flex flex-col gap-y-4">
+            {FOOTER_LINKS.legal.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className="text-space-gray hover:text-space-gray-hover transition-colors text-xs"
+              >
+                {label}
+              </Link>
+            ))}
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-[#252525] flex flex-col sm:flex-row justify-between items-center">
