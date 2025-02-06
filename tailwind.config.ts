@@ -13,12 +13,17 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        unbounded: ["var(--font-unbounded)"],
+        spaceMono: ["var(--font-space-mono)"],
+        geistMono: ["var(--font-geist-mono)"],
+      },
       colors: {
-        'space-gray': '#888888',
-        'space-gray-hover': '#a0a0a0',
-        silver: '#e8e9f3',
-        'hype-purple': '#4733ff',
-        'hype-purple-hover': '#5e4dff',
+        "space-gray": "#888888",
+        "space-gray-hover": "#a0a0a0",
+        silver: "#e8e9f3",
+        "hype-purple": "#4733ff",
+        "hype-purple-hover": "#5e4dff",
         'hype-purple-text': '#4d66ff',
         'hype-purple-text-hover': '#668aff',
         'cement-gray': '#cecece',

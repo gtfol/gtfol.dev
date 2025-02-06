@@ -23,7 +23,7 @@ const spaceMono = Space_Mono({
 
 const geist = GeistMono;
 export const metadata: Metadata = {
-  title: "gtfol",
+  title: "gtfol - ai product studio",
   icons: ["/favicon.ico"],
   openGraph: {
     type: "website",
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "gtfol",
-    description: "get the f**k off localhost",
+    title: "gtfol - ai product studio",
+    description: "we build software that go from 0 → 1, scale, and repeat.",
     images: ["https://www.gtfol.dev/logo.png"],
   },
 };

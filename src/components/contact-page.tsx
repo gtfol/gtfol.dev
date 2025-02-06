@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useEffect } from "react";
-import Link from "next/link";
 import ContactForm from "./contact-form";
+import { Footer } from "./footer";
+import { Header } from "./header";
 
 export default function ContactPage() {
   useEffect(() => {
@@ -11,14 +12,9 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-black text-white p-8 flex flex-col">
-      <header className="mb-12">
-        <Link href="/">
-          <img src="/icon.png" alt="gtfol" className="h-8 w-auto mr-2" />
-          <h2 className="text-xl font-bold mt-2 text-space-gray">
-            venture studio
-          </h2>
-        </Link>
-      </header>
+      <div className="mb-12">
+        <Header />
+      </div>
 
       <main className="flex-grow">
         <h1 className="text-3xl font-bold mb-8">contact us</h1>
@@ -61,11 +57,9 @@ export default function ContactPage() {
         </div>
       </main>
 
-      <footer className="mt-12 pt-8 border-t border-void-purple">
-        <p className="text-sm text-space-gray">
-          © {new Date().getFullYear()} gtfol, LLC. all rights reserved.
-        </p>
-      </footer>
+      <div className="mt-12">
+        <Footer />
+      </div>
     </div>
   );
 }

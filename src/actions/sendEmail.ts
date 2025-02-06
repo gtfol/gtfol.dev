@@ -25,7 +25,7 @@ export async function sendEmail(formData: FormData) {
 
   try {
     const { data } = await resend.emails.send({
-      from: `gtfol <contact@gtfol.dev>`,
+      from: `${name} <team@gtfol.dev>`,
       to: ["team@gtfol.dev"],
       subject: subject,
       html: `
