@@ -89,102 +89,66 @@ export default function HomePage() {
               solutions at 10x speed.
             </motion.p>
           </motion.div>
-          <div className="relative">
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-                watchFocus: false,
-                watchDrag: false,
-              }}
-              plugins={[
-                autoScroll({
-                  startDelay: 2000,
-                  speed: 1,
-                }),
-              ]}
-              className="w-full"
-              setApi={setApi}
-            >
-              <CarouselContent className="-mr-6">
-                <CarouselItem className="pr-0 sm:pr-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                  <PortfolioCard
-                    href="https://eddypump.com"
-                    title="EDDY Pump"
-                    description="pump & dredge equipment recommendation"
-                    front="eddypump-1"
-                    bgColor="#09090B"
-                    category="enterprise"
-                    delay={1.6}
-                  />
-                </CarouselItem>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-8">
+            <PortfolioCard
+              href="https://eddypump.com"
+              title="EDDY Pump"
+              description="pump & dredge equipment recommendation"
+              front="eddypump-1"
+              bgColor="#09090B"
+              category="enterprise"
+              delay={1.6}
+            />
 
-                <CarouselItem className="pr-0 sm:pr-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                  <PortfolioCard
-                    href="https://textfully.dev"
-                    title="Textfully"
-                    front="textfully-0"
-                    back="textfully-1"
-                    bgColor="#09090B"
-                    description="open source twilio alternative"
-                    category="saas"
-                    delay={1.7}
-                  />
-                </CarouselItem>
+            <PortfolioCard
+              href="https://textfully.dev"
+              title="Textfully"
+              front="textfully-1"
+              bgColor="#09090B"
+              description="open source twilio alternative"
+              category="saas"
+              delay={1.7}
+            />
 
-                <CarouselItem className="pr-0 sm:pr-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                  <PortfolioCard
-                    href="https://makefireplace.com"
-                    title="Fireplace"
-                    front="fireplace-0"
-                    back="fireplace-1"
-                    bgColor="#161E39"
-                    description="student engagement software for higher ed"
-                    category="enterprise"
-                    delay={1.8}
-                  />
-                </CarouselItem>
+            <PortfolioCard
+              href="https://makefireplace.com"
+              title="Fireplace"
+              front="fireplace-1"
+              bgColor="#161E39"
+              description="higher ed student engagement software"
+              category="enterprise"
+              delay={1.8}
+            />
 
-                <CarouselItem className="pr-0 sm:pr-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                  <PortfolioCard
-                    href="http://wakeupclub.vercel.app"
-                    title="Wakeup Club"
-                    front="wakeupclub-0"
-                    back="wakeupclub-1"
-                    bgColor="#6799B3"
-                    description="social alarm clock"
-                    category="consumer"
-                    delay={1.9}
-                  />
-                </CarouselItem>
+            <PortfolioCard
+              href="http://wakeupclub.vercel.app"
+              title="Wakeup Club"
+              front="wakeupclub-1"
+              bgColor="#6799B3"
+              description="social alarm clock iOS app"
+              category="consumer"
+              delay={1.9}
+            />
 
-                <CarouselItem className="pr-0 sm:pr-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                  <PortfolioCard
-                    href="https://gloskin.vercel.app"
-                    title="Glo"
-                    front="glo-0"
-                    back="glo-1"
-                    bgColor="#E45170"
-                    description="ai skincare coaching app"
-                    category="consumer"
-                    delay={2.0}
-                  />
-                </CarouselItem>
+            <PortfolioCard
+              href="https://gloskin.vercel.app"
+              title="Glo"
+              front="glo-1"
+              bgColor="#E45170"
+              description="ai skincare coaching iOS app"
+              category="consumer"
+              delay={2.0}
+            />
 
-                <CarouselItem className="pr-0 sm:pr-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                  <PortfolioCard
-                    href="https://flowwork.vercel.app"
-                    title="Flow Work"
-                    front="flowwork-0"
-                    back="flowwork-1"
-                    bgColor="#09090B"
-                    description="project management tool for remote teams"
-                    category="consumer"
-                    delay={2.1}
-                  />
-                </CarouselItem>
-              </CarouselContent>
-            </Carousel>
+            <PortfolioCard
+              href="https://flowwork.vercel.app"
+              title="Flow Work"
+              front="flowwork-1"
+              bgColor="#09090B"
+              description="remote team collaboration MacOS app"
+              category="consumer"
+              delay={2.1}
+            />
           </div>
         </div>
         <div className="mb-8">
@@ -244,7 +208,7 @@ export default function HomePage() {
                   <PortfolioCard
                     href="https://sorce.jobs"
                     title="Sorce"
-                    front="sorce-1"
+                    front="sorce"
                     bgColor="#09090B"
                     description="apply to jobs by swyping right"
                     category="consumer"
@@ -255,7 +219,7 @@ export default function HomePage() {
                   <PortfolioCard
                     href="https://www.auribuslabs.com"
                     title="Auribus Labs"
-                    front="auribuslabs-1"
+                    front="auribuslabs"
                     bgColor="#09090B"
                     description="the world's first platform for hearing health"
                     category="enterprise"
@@ -266,7 +230,7 @@ export default function HomePage() {
                   <PortfolioCard
                     href="https://usefortitude.com"
                     title="Fortitude"
-                    front="fortitude-1"
+                    front="fortitude"
                     bgColor="#09090B"
                     description="payments platform to protect businesses from chargebacks"
                     category="saas"
@@ -277,7 +241,7 @@ export default function HomePage() {
                   <PortfolioCard
                     href="https://parkwithperch.com"
                     title="Perch"
-                    front="perch-1"
+                    front="perch"
                     bgColor="#09090B"
                     description="stress-free, reserved football parking"
                     category="consumer"
@@ -288,29 +252,29 @@ export default function HomePage() {
                   <PortfolioCard
                     href="https://edenonearth.ai"
                     title="Eden"
-                    front="eden-1"
+                    front="eden"
                     bgColor="#09090B"
                     description="healthcare software to 10x staff productivity"
                     category="enterprise"
                     delay={1.8}
                   />
                 </CarouselItem>
-                <CarouselItem className="pr-0 sm:pr-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                {/* <CarouselItem className="pr-0 sm:pr-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
                   <PortfolioCard
                     href="https://intervieweveryone.org"
                     title="Interview Everyone"
-                    front="intervieweveryone-1"
+                    front="intervieweveryone"
                     bgColor="#09090B"
                     description="pre-screening interview tool for small businesses"
                     category="saas"
                     delay={1.9}
                   />
-                </CarouselItem>
+                </CarouselItem> */}
                 <CarouselItem className="pr-0 sm:pr-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
                   <PortfolioCard
                     href="https://edugator.app"
                     title="Edugator"
-                    front="edugator-1"
+                    front="edugator"
                     bgColor="#09090B"
                     description="the future of computing education"
                     category="enterprise"
