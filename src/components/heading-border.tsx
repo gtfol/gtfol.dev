@@ -9,7 +9,7 @@ interface HeadingBorderProps {
 export const HeadingBorder = ({ children, delay = 0 }: HeadingBorderProps) => {
   return (
     <motion.div
-      className="relative px-4 py-2 border border-white/50 overflow-hidden group"
+      className="relative px-3 py-1.5 sm:px-4 sm:py-2 border border-white/50 overflow-hidden group"
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{
@@ -18,7 +18,9 @@ export const HeadingBorder = ({ children, delay = 0 }: HeadingBorderProps) => {
         ease: "easeOut",
       }}
     >
-      {children}
+      <h3 className="text-base sm:text-lg font-unbounded font-normal tracking-wider">
+        {children}
+      </h3>
     </motion.div>
   );
 };

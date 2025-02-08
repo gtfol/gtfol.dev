@@ -27,7 +27,7 @@ export const Header = () => {
             className="flex items-center focus:outline-void-purple"
           >
             <motion.h2
-              className="text-3xl font-medium mt-2 tracking-wide text-white font-unbounded"
+              className="text-2xl sm:text-4xl text-white font-unbounded"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{
@@ -48,7 +48,7 @@ export const Header = () => {
           }}
         >
           <motion.h2
-            className="text-xl font-semibold mt-2 text-space-gray"
+            className="text-sm sm:text-base mt-1 sm:mt-2 text-space-gray"
             initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
@@ -65,11 +65,11 @@ export const Header = () => {
           duration: 0.5,
           delay: 1,
         }}
-        className="flex flex-col gap-y-3 items-end justify-end"
+        className="flex flex-col gap-y-2 sm:gap-y-3 items-end justify-end"
       >
         <div className="relative overflow-hidden">
           <motion.button
-            className="px-4 py-2 bg-hype-purple text-white font-medium hover:bg-hype-purple-hover transition-colors focus:outline-void-purple"
+            className="w-32 py-2 sm:w-40 sm:py-2.5 bg-hype-purple text-white font-unbounded text-xs sm:text-sm tracking-wider hover:bg-hype-purple-hover transition-colors focus:outline-void-purple"
             data-cal-link="allenlin/intro"
             data-cal-config='{"layout":"month_view"}'
             initial={{ opacity: 0 }}
@@ -104,7 +104,7 @@ export const Header = () => {
           }}
         >
           <Mail className="w-4 h-4" />
-          <span className="tracking-wide">team@gtfol.dev</span>
+          <span className="text-xs sm:text-sm">team@gtfol.dev</span>
         </motion.span>
         <Cal calLink="allenlin/intro" style={{ display: "none" }} />
       </motion.div>

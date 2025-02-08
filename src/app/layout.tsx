@@ -59,7 +59,7 @@ export default function RootLayout({
             unbounded.variable,
             spaceMono.variable,
             geist.className,
-            "h-full text-black"
+            "h-full text-black font-light tracking-wide"
           )}
         >
           {children}

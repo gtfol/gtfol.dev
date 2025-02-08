@@ -7,12 +7,11 @@ interface PortfolioCardProps {
   title: string;
   description: string;
   front: string;
-  back: string;
+  back?: string;
   bgColor: string;
   category: "consumer" | "saas" | "enterprise";
   delay: number;
 }
-
 export function PortfolioCard({
   href,
   title,
@@ -41,12 +40,12 @@ export function PortfolioCard({
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
     >
-      <div className="hover:bg-void-purple/10 transition-colors h-full flex flex-col relative text-center pb-8">
+      <div className="px-4 transition-colors h-full flex flex-col relative text-center py-8">
         <div className="relative mb-6">
           <AnimatePresence initial={false}>
             <motion.img
-              key={isHovered ? "back" : "front"}
-              src={`/portfolio/${isHovered ? back : front}.png`}
+              key={!!back && isHovered ? "back" : "front"}
+              src={`/portfolio/${!!back && isHovered ? back : front}.png`}
               alt={title}
               className="w-full h-auto aspect-[3/4] object-cover absolute"
               initial={{ opacity: 0 }}
@@ -59,12 +58,14 @@ export function PortfolioCard({
             className="w-full aspect-[3/4]"
             style={{ backgroundColor: bgColor }}
           />
-          <div className="absolute top-3 right-3 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 px-2 py-2 bg-black/50 backdrop-blur-sm text-xs border border-white select-none">
+          <div className="absolute top-3 right-3 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 bg-black/25 px-2 py-0.5 backdrop-blur-sm text-xs select-none">
             {category}
           </div>
         </div>
-        <h3 className="text-sm font-bold mb-3">{title}</h3>
-        <p className="text-xs sm:opacity-0 sm:group-hover:opacity-60 opacity-60 transition-opacity duration-300">
+        <h3 className="text-sm font-unbounded font-normal tracking-wider mb-3">
+          {title}
+        </h3>
+        <p className="text-sm sm:opacity-0 sm:group-hover:opacity-60 opacity-60 transition-opacity duration-300">
           {description}
         </p>
       </div>
