@@ -118,6 +118,7 @@ export default function HomePage() {
                     description="pump & dredge equipment recommendation"
                     front="eddypump-1"
                     back="eddypump-2"
+                    bgColor="#09090B"
                     category="enterprise"
                     delay={1.6}
                   />
@@ -129,6 +130,7 @@ export default function HomePage() {
                     title="Textfully"
                     front="textfully-1"
                     back="textfully-2"
+                    bgColor="#09090B"
                     description="the open source twilio alternative"
                     category="saas"
                     delay={1.7}
@@ -141,6 +143,7 @@ export default function HomePage() {
                     title="Glo"
                     front="glo-1"
                     back="glo-2"
+                    bgColor="#09090B"
                     description="your #1 skincare coach"
                     category="consumer"
                     delay={1.8}
@@ -153,6 +156,7 @@ export default function HomePage() {
                     title="Wakeup Club"
                     front="wakeupclub-1"
                     back="wakeupclub-2"
+                    bgColor="#6799B3"
                     description="get the f**k out of bed"
                     category="consumer"
                     delay={1.9}
@@ -165,6 +169,7 @@ export default function HomePage() {
                     title="Flow Work"
                     front="flowwork-1"
                     back="flowwork-2"
+                    bgColor="#09090B"
                     description="remote team project management tool"
                     category="consumer"
                     delay={2.0}
@@ -235,6 +240,7 @@ export default function HomePage() {
                     title="Sorce"
                     front="sorce-1"
                     back="sorce-2"
+                    bgColor="#09090B"
                     description="apply to jobs by swyping right"
                     category="consumer"
                     delay={1.4}
@@ -246,6 +252,7 @@ export default function HomePage() {
                     title="Auribus Labs"
                     front="auribuslabs-1"
                     back="auribuslabs-2"
+                    bgColor="#09090B"
                     description="the world's first platform for hearing health"
                     category="enterprise"
                     delay={1.5}
@@ -257,6 +264,7 @@ export default function HomePage() {
                     title="Fortitude"
                     front="fortitude-1"
                     back="fortitude-2"
+                    bgColor="#09090B"
                     description="payments platform to protect businesses from chargebacks"
                     category="saas"
                     delay={1.6}
@@ -268,6 +276,7 @@ export default function HomePage() {
                     title="Perch"
                     front="perch-1"
                     back="perch-2"
+                    bgColor="#09090B"
                     description="stress-free, reserved football parking"
                     category="consumer"
                     delay={1.7}
@@ -279,6 +288,7 @@ export default function HomePage() {
                     title="Eden"
                     front="eden-1"
                     back="eden-2"
+                    bgColor="#09090B"
                     description="healthcare software to 10x staff productivity"
                     category="enterprise"
                     delay={1.8}
@@ -290,6 +300,7 @@ export default function HomePage() {
                     title="Interview Everyone"
                     front="intervieweveryone-1"
                     back="intervieweveryone-2"
+                    bgColor="#09090B"
                     description="pre-screening interview tool for small businesses"
                     category="saas"
                     delay={1.9}
@@ -301,6 +312,7 @@ export default function HomePage() {
                     title="Edugator"
                     front="edugator-1"
                     back="edugator-2"
+                    bgColor="#09090B"
                     description="the future of computing education"
                     category="enterprise"
                     delay={2.0}

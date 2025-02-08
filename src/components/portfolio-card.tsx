@@ -8,6 +8,7 @@ interface PortfolioCardProps {
   description: string;
   front: string;
   back: string;
+  bgColor: string;
   category: "consumer" | "saas" | "enterprise";
   delay: number;
 }
@@ -20,6 +21,7 @@ export function PortfolioCard({
   back,
   category,
   delay,
+  bgColor,
 }: PortfolioCardProps) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -46,20 +48,17 @@ export function PortfolioCard({
               key={isHovered ? "back" : "front"}
               src={`/portfolio/${isHovered ? back : front}.png`}
               alt={title}
-              className="w-full h-auto aspect-[3/4] object-cover absolute overflow-hidden"
+              className="w-full h-auto aspect-[3/4] object-cover absolute"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{
-                duration: 0.6,
-                ease: [0.645, 0.045, 0.355, 1],
-              }}
-              style={{
-                willChange: "transform, opacity",
-              }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
             />
           </AnimatePresence>
-          <div className="w-full aspect-[3/4]" />
+          <div
+            className="w-full aspect-[3/4]"
+            style={{ backgroundColor: bgColor }}
+          />
           <div className="absolute top-3 right-3 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 px-2 py-2 bg-black/50 backdrop-blur-sm text-xs border border-white select-none">
             {category}
           </div>
