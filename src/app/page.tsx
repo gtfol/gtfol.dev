@@ -33,14 +33,14 @@ export default function HomePage() {
       <Header />
 
       <main className="flex-grow">
-        <div className="mx-8 mb-16">
-          <div className="flex">
+        <div className="mb-16">
+          <div className="mx-8 flex">
             <HeadingBorder delay={1}>
               <h3 className="text-xl font-unbounded">what is gtfol?</h3>
             </HeadingBorder>
           </div>
           <motion.div
-            className="my-8 space-y-6"
+            className="mx-8 my-8 space-y-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -64,14 +64,14 @@ export default function HomePage() {
           </motion.div>
         </div>
 
-        <div className="mx-8 mb-12">
-          <div className="flex">
+        <div className="mb-4">
+          <div className="mx-8 flex">
             <HeadingBorder delay={1.4}>
               <h3 className="text-xl font-unbounded">our work</h3>
             </HeadingBorder>
           </div>
           <motion.div
-            className="my-8 space-y-6"
+            className="mx-8 my-8 space-y-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -93,51 +93,85 @@ export default function HomePage() {
               solutions at 10x speed.
             </motion.p>
           </motion.div>
-          <div className="my-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8">
-            <PortfolioCard
-              href="https://eddypump.com"
-              imageUrl="https://placehold.co/336x448"
-              title="EDDY Pump"
-              description="pump & dredge equipment recommendation"
-              category="enterprise"
-              delay={1.6}
-            />
+          <div className="relative">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+                watchFocus: false,
+                watchDrag: false,
+              }}
+              plugins={[
+                autoScroll({
+                  startDelay: 2000,
+                  speed: 1,
+                }),
+              ]}
+              className="w-full"
+              setApi={setApi}
+            >
+              <CarouselContent className="-ml-6">
+                <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <PortfolioCard
+                    href="https://eddypump.com"
+                    title="EDDY Pump"
+                    description="pump & dredge equipment recommendation"
+                    front="eddypump-1"
+                    back="eddypump-2"
+                    category="enterprise"
+                    delay={1.6}
+                  />
+                </CarouselItem>
 
-            <PortfolioCard
-              href="https://textfully.dev"
-              imageUrl="https://placehold.co/336x448"
-              title="Textfully"
-              description="the open source twilio alternative"
-              category="saas"
-              delay={1.7}
-            />
+                <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <PortfolioCard
+                    href="https://textfully.dev"
+                    title="Textfully"
+                    front="textfully-1"
+                    back="textfully-2"
+                    description="the open source twilio alternative"
+                    category="saas"
+                    delay={1.7}
+                  />
+                </CarouselItem>
 
-            <PortfolioCard
-              href="https://gloskin.vercel.app"
-              imageUrl="https://placehold.co/336x448"
-              title="Glo"
-              description="your #1 skincare coach"
-              category="consumer"
-              delay={1.8}
-            />
+                <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <PortfolioCard
+                    href="https://gloskin.vercel.app"
+                    title="Glo"
+                    front="glo-1"
+                    back="glo-2"
+                    description="your #1 skincare coach"
+                    category="consumer"
+                    delay={1.8}
+                  />
+                </CarouselItem>
 
-            <PortfolioCard
-              href="http://wakeupclub.vercel.app"
-              imageUrl="https://placehold.co/336x448"
-              title="Wakeup Club"
-              description="get the f**k out of bed"
-              category="consumer"
-              delay={1.9}
-            />
+                <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <PortfolioCard
+                    href="http://wakeupclub.vercel.app"
+                    title="Wakeup Club"
+                    front="wakeupclub-1"
+                    back="wakeupclub-2"
+                    description="get the f**k out of bed"
+                    category="consumer"
+                    delay={1.9}
+                  />
+                </CarouselItem>
 
-            <PortfolioCard
-              href="https://flowwork.vercel.app"
-              imageUrl="https://placehold.co/336x448"
-              title="Flow Work"
-              description="cowork with friends and get sh*t done"
-              category="consumer"
-              delay={2.0}
-            />
+                <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <PortfolioCard
+                    href="https://flowwork.vercel.app"
+                    title="Flow Work"
+                    front="flowwork-1"
+                    back="flowwork-2"
+                    description="remote team project management tool"
+                    category="consumer"
+                    delay={2.0}
+                  />
+                </CarouselItem>
+              </CarouselContent>
+            </Carousel>
           </div>
         </div>
         <div className="mb-8">
@@ -198,8 +232,9 @@ export default function HomePage() {
                 <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
                   <PortfolioCard
                     href="https://sorce.jobs"
-                    imageUrl="https://placehold.co/336x448"
                     title="Sorce"
+                    front="sorce-1"
+                    back="sorce-2"
                     description="apply to jobs by swyping right"
                     category="consumer"
                     delay={1.4}
@@ -208,8 +243,9 @@ export default function HomePage() {
                 <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
                   <PortfolioCard
                     href="https://www.auribuslabs.com"
-                    imageUrl="https://placehold.co/336x448"
                     title="Auribus Labs"
+                    front="auribuslabs-1"
+                    back="auribuslabs-2"
                     description="the world's first platform for hearing health"
                     category="enterprise"
                     delay={1.5}
@@ -218,8 +254,9 @@ export default function HomePage() {
                 <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
                   <PortfolioCard
                     href="https://usefortitude.com"
-                    imageUrl="https://placehold.co/336x448"
                     title="Fortitude"
+                    front="fortitude-1"
+                    back="fortitude-2"
                     description="payments platform to protect businesses from chargebacks"
                     category="saas"
                     delay={1.6}
@@ -228,8 +265,9 @@ export default function HomePage() {
                 <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
                   <PortfolioCard
                     href="https://parkwithperch.com"
-                    imageUrl="https://placehold.co/336x448"
                     title="Perch"
+                    front="perch-1"
+                    back="perch-2"
                     description="stress-free, reserved football parking"
                     category="consumer"
                     delay={1.7}
@@ -238,8 +276,9 @@ export default function HomePage() {
                 <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
                   <PortfolioCard
                     href="https://edenonearth.ai"
-                    imageUrl="https://placehold.co/336x448"
                     title="Eden"
+                    front="eden-1"
+                    back="eden-2"
                     description="healthcare software to 10x staff productivity"
                     category="enterprise"
                     delay={1.8}
@@ -248,8 +287,9 @@ export default function HomePage() {
                 <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
                   <PortfolioCard
                     href="https://intervieweveryone.org"
-                    imageUrl="https://placehold.co/336x448"
                     title="Interview Everyone"
+                    front="intervieweveryone-1"
+                    back="intervieweveryone-2"
                     description="pre-screening interview tool for small businesses"
                     category="saas"
                     delay={1.9}
@@ -258,8 +298,9 @@ export default function HomePage() {
                 <CarouselItem className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
                   <PortfolioCard
                     href="https://edugator.app"
-                    imageUrl="https://placehold.co/336x448"
                     title="Edugator"
+                    front="edugator-1"
+                    back="edugator-2"
                     description="the future of computing education"
                     category="enterprise"
                     delay={2.0}
