@@ -34,11 +34,11 @@ export default function HomePage() {
 
       <main className="flex-grow">
         <div className="mb-16">
-          <div className="mx-8 flex justify-center">
+          <div className="mx-8 flex">
             <HeadingBorder delay={1}>what is gtfol?</HeadingBorder>
           </div>
           <motion.div
-            className="mx-8 my-8 space-y-6 text-sm sm:text-base font-thin text-center"
+            className="mx-8 my-8 space-y-6 text-sm sm:text-base font-thin"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -63,11 +63,11 @@ export default function HomePage() {
         </div>
 
         <div className="mb-4">
-          <div className="mx-8 flex justify-center">
+          <div className="mx-8 flex">
             <HeadingBorder delay={1.4}>our work</HeadingBorder>
           </div>
           <motion.div
-            className="mx-8 mb-4 mt-8 space-y-6 text-sm sm:text-base font-thin text-center"
+            className="mx-8 mb-4 mt-8 space-y-6 text-sm sm:text-base font-thin"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -90,7 +90,7 @@ export default function HomePage() {
             </motion.p>
           </motion.div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-8">
-            <PortfolioCard
+            {/* <PortfolioCard
               href="https://eddypump.com"
               title="EDDY Pump"
               description="pump & dredge equipment recommendation"
@@ -98,7 +98,7 @@ export default function HomePage() {
               bgColor="#09090B"
               category="enterprise"
               delay={1.6}
-            />
+            /> */}
 
             <PortfolioCard
               href="https://textfully.dev"
@@ -210,6 +210,7 @@ export default function HomePage() {
                     title="Sorce"
                     front="sorce"
                     bgColor="#09090B"
+                    orientation="horizontal"
                     description="apply to jobs by swyping right"
                     category="consumer"
                     delay={1.4}
@@ -221,6 +222,7 @@ export default function HomePage() {
                     title="Auribus Labs"
                     front="auribuslabs"
                     bgColor="#09090B"
+                    orientation="horizontal"
                     description="the world's first platform for hearing health"
                     category="enterprise"
                     delay={1.5}
@@ -232,6 +234,7 @@ export default function HomePage() {
                     title="Fortitude"
                     front="fortitude"
                     bgColor="#09090B"
+                    orientation="horizontal"
                     description="payments platform to protect businesses from chargebacks"
                     category="saas"
                     delay={1.6}
@@ -243,6 +246,7 @@ export default function HomePage() {
                     title="Perch"
                     front="perch"
                     bgColor="#09090B"
+                    orientation="horizontal"
                     description="stress-free, reserved football parking"
                     category="consumer"
                     delay={1.7}
@@ -254,6 +258,7 @@ export default function HomePage() {
                     title="Eden"
                     front="eden"
                     bgColor="#09090B"
+                    orientation="horizontal"
                     description="healthcare software to 10x staff productivity"
                     category="enterprise"
                     delay={1.8}
@@ -265,6 +270,7 @@ export default function HomePage() {
                     title="Interview Everyone"
                     front="intervieweveryone"
                     bgColor="#09090B"
+                    orientation="horizontal"
                     description="pre-screening interview tool for small businesses"
                     category="saas"
                     delay={1.9}
@@ -276,6 +282,7 @@ export default function HomePage() {
                     title="Edugator"
                     front="edugator"
                     bgColor="#09090B"
+                    orientation="horizontal"
                     description="the future of computing education"
                     category="enterprise"
                     delay={2.0}

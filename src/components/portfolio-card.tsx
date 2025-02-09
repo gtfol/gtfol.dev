@@ -8,6 +8,7 @@ interface PortfolioCardProps {
   description: string;
   front: string;
   back?: string;
+  orientation?: "horizontal" | "vertical";
   bgColor: string;
   category: "consumer" | "saas" | "enterprise";
   delay: number;
@@ -18,6 +19,7 @@ export function PortfolioCard({
   description,
   front,
   back,
+  orientation = "vertical",
   category,
   delay,
   bgColor,
@@ -63,7 +65,10 @@ export function PortfolioCard({
                 isMobile ? back || front : !!back && isHovered ? back : front
               }.png`}
               alt={title}
-              className="w-full h-auto aspect-[3/4] object-cover absolute"
+              className={cn(
+                "w-full h-auto object-cover absolute",
+                orientation === "horizontal" ? "aspect-[4/3]" : "aspect-[3/4]"
+              )}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -71,7 +76,10 @@ export function PortfolioCard({
             />
           </AnimatePresence>
           <div
-            className="w-full aspect-[3/4]"
+            className={cn(
+              "w-full aspect-[3/4]",
+              orientation === "horizontal" ? "aspect-[4/3]" : "aspect-[3/4]"
+            )}
             style={{ backgroundColor: bgColor }}
           />
           <div className="absolute top-3 right-3 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 bg-black/25 px-2 py-0.5 backdrop-blur-sm text-xs select-none">
