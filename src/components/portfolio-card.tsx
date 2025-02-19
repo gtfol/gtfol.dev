@@ -86,10 +86,10 @@ export function PortfolioCard({
             {category}
           </div>
         </div>
-        <h3 className="text-sm font-unbounded font-normal tracking-wider mb-3">
+        <h3 className="text-xs sm:text-sm font-unbounded font-normal tracking-wider mb-1.5 sm:mb-3">
           {title}
         </h3>
-        <p className="text-sm sm:opacity-0 sm:group-hover:opacity-60 opacity-60 transition-opacity duration-300">
+        <p className="text-xs sm:text-sm sm:opacity-0 sm:group-hover:opacity-60 opacity-60 transition-opacity duration-300">
           {description}
         </p>
       </div>

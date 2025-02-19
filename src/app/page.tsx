@@ -33,12 +33,12 @@ export default function HomePage() {
       <Header />
 
       <main className="flex-grow">
-        <div className="mb-16">
-          <div className="mx-8 flex">
+        <div className="mb-12 sm:mb-16">
+          <div className="mx-4 sm:mx-8 flex">
             <HeadingBorder delay={1}>what is gtfol?</HeadingBorder>
           </div>
           <motion.div
-            className="mx-8 my-8 space-y-6 text-sm sm:text-base font-light"
+            className="mx-4 sm:mx-8 mb-4 mt-6 sm:mt-8 space-y-6 text-sm sm:text-base font-light"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -63,11 +63,11 @@ export default function HomePage() {
         </div>
 
         <div className="mb-4">
-          <div className="mx-8 flex">
+          <div className="mx-4 sm:mx-8 flex">
             <HeadingBorder delay={1.4}>our work</HeadingBorder>
           </div>
           <motion.div
-            className="mx-8 mb-4 mt-8 space-y-6 text-sm sm:text-base font-light"
+            className="mx-4 sm:mx-8 mb-4 mt-6 sm:mt-8 space-y-6 text-sm sm:text-base font-light"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -90,7 +90,7 @@ export default function HomePage() {
               weeks.
             </motion.p>
           </motion.div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-4 sm:mx-8">
             {/* <PortfolioCard
               href="https://eddypump.com"
               title="EDDY Pump"
@@ -152,17 +152,17 @@ export default function HomePage() {
             />
           </div>
         </div>
-        <div className="mb-16">
-          <div className="mx-8 flex">
-            <HeadingBorder delay={1.4}>our services</HeadingBorder>
+        <div className="mb-12 sm:mb-16">
+          <div className="mx-4 sm:mx-8 flex">
+            <HeadingBorder delay={2.2}>our services</HeadingBorder>
           </div>
           <motion.div
-            className="mx-8 mb-4 mt-8 space-y-6 text-sm sm:text-base font-light"
+            className="mx-4 sm:mx-8 mb-4 mt-6 sm:mt-8 space-y-6 text-sm sm:text-base font-light"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.3,
-              delay: 1.4,
+              delay: 2.2,
               ease: "easeOut",
             }}
           >
@@ -172,7 +172,7 @@ export default function HomePage() {
               animate={{ opacity: 1 }}
               transition={{
                 duration: 0.2,
-                delay: 1.5,
+                delay: 2.3,
                 ease: "easeOut",
               }}
             >
@@ -203,16 +203,16 @@ export default function HomePage() {
           </motion.div>
         </div>
         <div className="mb-8">
-          <div className="mx-8 flex">
-            <HeadingBorder delay={2.1}>our community</HeadingBorder>
+          <div className="mx-4 sm:mx-8 flex">
+            <HeadingBorder delay={2.4}>our community</HeadingBorder>
           </div>
           <motion.div
-            className="mx-8 mb-4 mt-8 space-y-6 text-sm sm:text-base font-light"
+            className="mx-4 sm:mx-8 mb-4 mt-6 sm:mt-8 space-y-6 text-sm sm:text-base font-light"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.3,
-              delay: 1.1,
+              delay: 2.4,
               ease: "easeOut",
             }}
           >
@@ -221,7 +221,7 @@ export default function HomePage() {
               animate={{ opacity: 1 }}
               transition={{
                 duration: 0.2,
-                delay: 1.2,
+                delay: 2.5,
                 ease: "easeOut",
               }}
             >
@@ -264,7 +264,7 @@ export default function HomePage() {
                     orientation="horizontal"
                     description="apply to jobs by swyping right"
                     category="consumer"
-                    delay={1.4}
+                    delay={2.6}
                   />
                 </CarouselItem>
                 <CarouselItem className="pr-0 sm:pr-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
@@ -276,7 +276,7 @@ export default function HomePage() {
                     orientation="horizontal"
                     description="the world's first platform for hearing health"
                     category="enterprise"
-                    delay={1.5}
+                    delay={2.7}
                   />
                 </CarouselItem>
                 <CarouselItem className="pr-0 sm:pr-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
@@ -288,7 +288,7 @@ export default function HomePage() {
                     orientation="horizontal"
                     description="payments platform to protect businesses from chargebacks"
                     category="saas"
-                    delay={1.6}
+                    delay={2.8}
                   />
                 </CarouselItem>
                 <CarouselItem className="pr-0 sm:pr-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
@@ -300,7 +300,7 @@ export default function HomePage() {
                     orientation="horizontal"
                     description="stress-free, reserved football parking"
                     category="consumer"
-                    delay={1.7}
+                    delay={2.9}
                   />
                 </CarouselItem>
                 <CarouselItem className="pr-0 sm:pr-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
@@ -312,21 +312,9 @@ export default function HomePage() {
                     orientation="horizontal"
                     description="healthcare software to 10x staff productivity"
                     category="enterprise"
-                    delay={1.8}
+                    delay={3.0}
                   />
                 </CarouselItem>
-                {/* <CarouselItem className="pr-0 sm:pr-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                  <PortfolioCard
-                    href="https://intervieweveryone.org"
-                    title="Interview Everyone"
-                    front="intervieweveryone"
-                    bgColor="#09090B"
-                    orientation="horizontal"
-                    description="pre-screening interview tool for small businesses"
-                    category="saas"
-                    delay={1.9}
-                  />
-                </CarouselItem> */}
                 <CarouselItem className="pr-0 sm:pr-6 basis-1/2 md:basis-1/3 lg:basis-1/4">
                   <PortfolioCard
                     href="https://edugator.app"
@@ -336,7 +324,7 @@ export default function HomePage() {
                     orientation="horizontal"
                     description="the future of computing education"
                     category="enterprise"
-                    delay={2.0}
+                    delay={3.1}
                   />
                 </CarouselItem>
               </CarouselContent>
