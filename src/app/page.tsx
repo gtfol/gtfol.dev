@@ -86,7 +86,8 @@ export default function HomePage() {
               }}
             >
               we build high-quality consumer apps, b2b saas, and enterprise
-              solutions at 10x speed.
+              solutions at 10x speed, going from idea to mvp to launch within
+              weeks.
             </motion.p>
           </motion.div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-8">
