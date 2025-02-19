@@ -38,7 +38,7 @@ export default function HomePage() {
             <HeadingBorder delay={1}>what is gtfol?</HeadingBorder>
           </div>
           <motion.div
-            className="mx-8 my-8 space-y-6 text-sm sm:text-base font-thin"
+            className="mx-8 my-8 space-y-6 text-sm sm:text-base font-light"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -67,7 +67,7 @@ export default function HomePage() {
             <HeadingBorder delay={1.4}>our work</HeadingBorder>
           </div>
           <motion.div
-            className="mx-8 mb-4 mt-8 space-y-6 text-sm sm:text-base font-thin"
+            className="mx-8 mb-4 mt-8 space-y-6 text-sm sm:text-base font-light"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -85,7 +85,7 @@ export default function HomePage() {
                 ease: "easeOut",
               }}
             >
-              our expertise is in building consumer apps, saas, and enterprise
+              we build high-quality consumer apps, b2b saas, and enterprise
               solutions at 10x speed.
             </motion.p>
           </motion.div>
@@ -121,7 +121,7 @@ export default function HomePage() {
             />
 
             <PortfolioCard
-              href="http://wakeupclub.vercel.app"
+              href="http://wakeupclub.gtfol.dev"
               title="Wakeup Club"
               front="wakeupclub-1"
               bgColor="#6799B3"
@@ -131,7 +131,7 @@ export default function HomePage() {
             />
 
             <PortfolioCard
-              href="https://gloskin.vercel.app"
+              href="https://gloskin.gtfol.dev"
               title="Glo"
               front="glo-1"
               bgColor="#E45170"
@@ -141,7 +141,7 @@ export default function HomePage() {
             />
 
             <PortfolioCard
-              href="https://flowwork.vercel.app"
+              href="https://flowwork.gtfol.dev"
               title="Flow Work"
               front="flowwork-1"
               bgColor="#09090B"
@@ -151,12 +151,62 @@ export default function HomePage() {
             />
           </div>
         </div>
-        <div className="mb-8">
+        <div className="mb-16">
           <div className="mx-8 flex">
-            <HeadingBorder delay={2.1}>rev</HeadingBorder>
+            <HeadingBorder delay={1.4}>our services</HeadingBorder>
           </div>
           <motion.div
-            className="mx-8 mb-4 mt-8 space-y-6 text-sm sm:text-base font-thin"
+            className="mx-8 mb-4 mt-8 space-y-6 text-sm sm:text-base font-light"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.3,
+              delay: 1.4,
+              ease: "easeOut",
+            }}
+          >
+            <motion.div
+              className="grid grid-cols-1 md:grid-cols-2 gap-8"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 0.2,
+                delay: 1.5,
+                ease: "easeOut",
+              }}
+            >
+              <div className="space-y-2">
+                <h3 className="font-medium">web apps</h3>
+                <p className="text-white/50">
+                  landing page, ecommerce store, full-stack app
+                </p>
+              </div>
+
+              <div className="space-y-2">
+                <h3 className="font-medium">mobile apps</h3>
+                <p className="text-white/50">ios, android, cross-platform</p>
+              </div>
+
+              <div className="space-y-2">
+                <h3 className="font-medium">custom software</h3>
+                <p className="text-white/50">consumer, saas, enterprise</p>
+              </div>
+
+              <div className="space-y-2">
+                <h3 className="font-medium">ai solutions</h3>
+                <p className="text-white/50">
+                  chatbot, recommendation system, workflow automation
+                </p>
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
+        <div className="mb-8">
+          <div className="mx-8 flex">
+            <HeadingBorder delay={2.1}>our community</HeadingBorder>
+          </div>
+          <motion.div
+            className="mx-8 mb-4 mt-8 space-y-6 text-sm sm:text-base font-light"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -178,12 +228,12 @@ export default function HomePage() {
                 href="https://rev.school"
                 referrerPolicy="no-referrer"
                 target="_blank"
-                className="border-b hover:border-white/75 hover:text-white/75 focus:outline-void-purple"
+                className="border-b hover:border-white/50 hover:text-white/50 focus:outline-void-purple"
               >
                 rev
               </a>{" "}
               is our affiliated community of builders, founders, creatives, and
-              researchers. we offer free mentorship to cohort fellows.
+              researchers. we provide free mentorship to our community.
             </motion.p>
           </motion.div>
           <div className="relative">

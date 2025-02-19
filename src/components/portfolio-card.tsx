@@ -66,8 +66,8 @@ export function PortfolioCard({
               }.png`}
               alt={title}
               className={cn(
-                "w-full h-auto object-cover absolute",
-                orientation === "horizontal" ? "aspect-[4/3]" : "aspect-[3/4]"
+                "w-full h-fit object-contain absolute",
+                orientation === "horizontal" ? "aspect-[16/9]" : "aspect-[3/4]"
               )}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -78,7 +78,7 @@ export function PortfolioCard({
           <div
             className={cn(
               "w-full aspect-[3/4]",
-              orientation === "horizontal" ? "aspect-[4/3]" : "aspect-[3/4]"
+              orientation === "horizontal" ? "aspect-[16/9]" : "aspect-[3/4]"
             )}
             style={{ backgroundColor: bgColor }}
           />
