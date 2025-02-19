@@ -70,7 +70,7 @@ export const Header = () => {
         <div className="relative overflow-hidden">
           <motion.button
             className="w-32 py-2 sm:w-40 sm:py-2.5 bg-hype-purple text-white font-unbounded text-xs sm:text-sm tracking-wider hover:bg-hype-purple-hover transition-colors focus:outline-void-purple"
-            data-cal-link="allenlin/intro"
+            data-cal-link="gtfol/intro"
             data-cal-config='{"layout":"month_view"}'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -94,7 +94,7 @@ export const Header = () => {
             }}
           />
         </div>
-        <motion.span 
+        <motion.span
           className="text-space-gray text-sm flex items-center gap-1"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -106,7 +106,7 @@ export const Header = () => {
           <Mail className="w-4 h-4" />
           <span className="text-xs sm:text-sm">team@gtfol.dev</span>
         </motion.span>
-        <Cal calLink="allenlin/intro" style={{ display: "none" }} />
+        <Cal calLink="gtfol/intro" style={{ display: "none" }} />
       </motion.div>
     </header>
   );
