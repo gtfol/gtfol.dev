@@ -66,7 +66,7 @@ export const Footer = () => {
                 <img
                   src="/icon.png"
                   alt="gtfol"
-                  className="h-6 w-fit flex-shrink-0"
+                  className="h-6 w-auto object-contain flex-shrink-0"
                 />
               </button>
               <span className="text-xs text-space-gray">
