@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { sendEmail } from "@/actions/sendEmail";
 
 export default function ContactForm() {
+  const formRef = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState<string | null>(null);
 
   const handleSubmit = async (formData: FormData) => {
@@ -11,12 +12,13 @@ export default function ContactForm() {
     if (result.error) {
       setStatus(result.error);
     } else if (result.success) {
+      formRef.current?.reset();
       setStatus(result.success);
     }
   };
 
   return (
-    <form action={handleSubmit} className="mb-8 space-y-4">
+    <form ref={formRef} action={handleSubmit} className="mb-8 space-y-4">
       <div>
         <label htmlFor="name" className="block mb-2">
           name

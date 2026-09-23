@@ -19,7 +19,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <header className="flex justify-between px-8 pt-8 pb-8 mb-8 bg-[#09090B]">
+    <header className="flex justify-between px-8 pt-8 pb-8 mb-8">
       <div>
         <div className="flex items-center gap-4">
           <Link

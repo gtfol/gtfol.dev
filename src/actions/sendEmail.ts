@@ -24,7 +24,7 @@ export async function sendEmail(formData: FormData) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   try {
-    const { data } = await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: `${name} <team@gtfol.dev>`,
       to: ["team@gtfol.dev"],
       subject: subject,
@@ -38,7 +38,9 @@ export async function sendEmail(formData: FormData) {
       `,
     });
 
-    console.log(data);
+    if (error) {
+      return { error: "failed to send message" };
+    }
     return { success: "message sent successfully" };
   } catch (error) {
     console.error("error sending email:", error);
