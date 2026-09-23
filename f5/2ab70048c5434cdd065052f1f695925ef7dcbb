@@ -1,0 +1,23 @@
+src/components/header.tsx
+  s_0521f8d73d6032::t_e76e0ddb627529 22
+src/actions/sendEmail.ts
+  s_0521f8d73d6032::t_e76e0ddb627529 27,41-43
+src/components/contact-form.tsx
+  s_0521f8d73d6032::t_e76e0ddb627529 3,7,15,21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "f52ab70048c5434cdd065052f1f695925ef7dcbb",
+  "prompts": {},
+  "sessions": {
+    "s_0521f8d73d6032": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0836b-e052-7f82-9502-659c23c1b21f",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Allen Lin <allenlinsh@gmail.com>"
+    }
+  }
+}
